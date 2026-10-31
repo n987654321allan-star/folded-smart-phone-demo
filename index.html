@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>折疊手機分析 2026</title>
+<meta name="description" content="2026 年 10 月台灣市場折疊手機的功能、優缺點與售價分析">
+<style>
+:root{
+  --bg:#f6f5f2; --card:#ffffff; --ink:#1d1d1f; --muted:#5f6368; --line:#e3e0d8;
+  --accent:#1f5eff; --good:#18794e; --bad:#b42318; --warn:#9a6700;
+  --bar:#1f5eff; --bar-bg:#e8ecf7; --chip:#eef2ff;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#121316; --card:#1b1d22; --ink:#ececec; --muted:#a0a4ab; --line:#2c2f36;
+    --accent:#7aa2ff; --good:#4cc38a; --bad:#ff8a80; --warn:#e3b341;
+    --bar:#7aa2ff; --bar-bg:#262b38; --chip:#242a3d;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  line-height:1.7}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px 64px}
+header{padding:40px 0 20px}
+h1{font-size:clamp(26px,5vw,38px);margin:0 0 8px;letter-spacing:.01em}
+.sub{color:var(--muted);margin:0}
+.stamp{display:inline-block;margin-top:14px;padding:4px 12px;border-radius:999px;background:var(--chip);color:var(--accent);font-size:13px}
+h2{font-size:22px;margin:44px 0 14px;padding-top:6px}
+h3{font-size:17px;margin:0 0 6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 14px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.tl{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:14px 16px;margin:0}
+.tl b{color:var(--accent)}
+/* price bars */
+.bars{display:grid;gap:12px}
+.bar-row{display:grid;grid-template-columns:150px 1fr 92px;gap:10px;align-items:center;font-size:14px}
+.bar-track{background:var(--bar-bg);border-radius:8px;height:22px;overflow:hidden}
+.bar-fill{background:var(--bar);height:100%;border-radius:8px}
+.bar-val{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+@media(max-width:560px){
+  .bar-row{grid-template-columns:1fr 92px}
+  .bar-row .bar-track{grid-column:1 / -1;order:3}
+}
+/* tables */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:680px;font-size:14px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--chip);font-weight:600;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td:first-child,th:first-child{position:sticky;left:0;background:var(--card);font-weight:600;white-space:nowrap}
+th:first-child{background:var(--chip)}
+.pro,.con{margin:0;padding-left:18px;font-size:14.5px}
+.pro li::marker{color:var(--good)} .con li::marker{color:var(--bad)}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);margin-left:6px;vertical-align:middle}
+.note{color:var(--muted);font-size:13px}
+.warn{border-left:4px solid var(--warn)}
+details{margin-top:10px}
+summary{cursor:pointer;color:var(--accent);font-size:14px}
+ul.src{padding-left:18px;font-size:13.5px;color:var(--muted)}
+ul.src a{color:var(--accent);word-break:break-all}
+footer{margin-top:40px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>折疊手機分析：功能、優缺點與售價</h1>
+  <p class="sub">以台灣市場為主，整理 2026 年 10 月可買到的主流折疊機</p>
+  <span class="stamp">資料整理日：2026-10-31</span>
+</header>
+
+<h2>先看重點</h2>
+<div class="grid">
+  <p class="tl"><b>價格帶拉開了。</b>翻蓋機 Flip8 約 3.9 萬起；書本式從 5.99 萬（Fold8）到 7.49 萬（iPhone Duo）起跳，頂規容量接近或超過 8 萬。</p>
+  <p class="tl"><b>防水防塵成為賣點。</b>Pixel 11 Pro Fold 與 iPhone Duo 標示 IP68；Galaxy Z 新系列在資料表標示為 IP48，防塵程度不同。</p>
+  <p class="tl"><b>Apple 加入戰局。</b>iPhone Duo 於台灣 10/23 開賣，是首款折疊 iPhone，也是目前台灣牌價最高的書本式機種之一。</p>
+</div>
+
+<h2>台灣起售價比較（最低容量，新台幣）</h2>
+<div class="card">
+  <div class="bars" role="img" aria-label="各機種台灣起售價長條圖">
+    <div class="bar-row"><span>Galaxy Z Flip8</span><div class="bar-track"><div class="bar-fill" style="width:48.6%"></div></div><span class="bar-val">38,900</span></div>
+    <div class="bar-row"><span>Galaxy Z Fold8</span><div class="bar-track"><div class="bar-fill" style="width:74.9%"></div></div><span class="bar-val">59,900</span></div>
+    <div class="bar-row"><span>Pixel 11 Pro Fold</span><div class="bar-track"><div class="bar-fill" style="width:76.2%"></div></div><span class="bar-val">60,990</span></div>
+    <div class="bar-row"><span>Galaxy Z Fold8 Ultra</span><div class="bar-track"><div class="bar-fill" style="width:82.4%"></div></div><span class="bar-val">65,900</span></div>
+    <div class="bar-row"><span>iPhone Duo</span><div class="bar-track"><div class="bar-fill" style="width:93.6%"></div></div><span class="bar-val">74,900</span></div>
+  </div>
+  <p class="note">長條以 80,000 元為 100%。Pixel 11 Pro Fold 的台灣價格取自媒體報導標題（60,990 元起，已開放預購），建議以 Google 官方公布為準。</p>
+</div>
+
+<h2>各容量牌價</h2>
+<div class="tbl">
+<table>
+  <thead><tr><th>機種</th><th>256GB</th><th>512GB</th><th>1TB</th><th>2TB</th><th>備註</th></tr></thead>
+  <tbody>
+    <tr><td>Galaxy Z Flip8</td><td>38,900</td><td>44,900</td><td>—</td><td>—</td><td>預購期 256GB 可免費升級 512GB（指定通路）</td></tr>
+    <tr><td>Galaxy Z Fold8</td><td>59,900</td><td>65,900</td><td>—</td><td>—</td><td>寬版設計</td></tr>
+    <tr><td>Galaxy Z Fold8 Ultra</td><td>65,900</td><td>71,900</td><td>83,900</td><td>—</td><td>1TB 為 16GB RAM</td></tr>
+    <tr><td>Pixel 11 Pro Fold</td><td>60,990 起</td><td>見官方</td><td>見官方</td><td>—</td><td>美國起售價 $1,899，較前代調漲 $100</td></tr>
+    <tr><td>iPhone Duo</td><td>74,900</td><td>81,900</td><td>96,900</td><td>118,900</td><td>台灣 10/23 發售（10/16 預購）</td></tr>
+  </tbody>
+</table>
+</div>
+<p class="note">上一代行情參考：Galaxy Z Fold7 在比價網站的 10 月價格，256GB 福利品約 34,500 元、512GB 新機約 40,947 元起（賣場與商品狀況不一，非官方牌價）。</p>
+
+<h2>規格與功能比較</h2>
+<div class="tbl">
+<table>
+  <thead><tr><th>項目</th><th>Fold8 Ultra</th><th>Fold8</th><th>Flip8</th><th>Pixel 11 Pro Fold</th><th>iPhone Duo</th></tr></thead>
+  <tbody>
+    <tr><td>類型</td><td>書本式</td><td>書本式（寬版）</td><td>翻蓋式</td><td>書本式</td><td>書本式（寬版）</td></tr>
+    <tr><td>內螢幕</td><td>8 吋</td><td>7.6 吋</td><td>6.9 吋</td><td>8 吋</td><td>7.6 吋</td></tr>
+    <tr><td>外螢幕</td><td>6.5 吋</td><td>5.5 吋</td><td>4.1 吋</td><td>6.5 吋</td><td>5.4 吋</td></tr>
+    <tr><td>處理器</td><td>Snapdragon 8 Elite Gen 5 for Galaxy</td><td>同系列（資料表共用欄位）</td><td>Exynos 2600</td><td>Tensor G6，16GB RAM</td><td>A20 Pro（2nm）</td></tr>
+    <tr><td>電池</td><td>5,000mAh</td><td>4,800mAh</td><td>4,300mAh</td><td>官方稱續航逾 24 小時</td><td>雙電池，混合使用最長 24 小時</td></tr>
+    <tr><td>主相機</td><td>200MP</td><td>50MP</td><td>50MP</td><td>48MP</td><td>48MP ×2（含光學 2 倍）</td></tr>
+    <tr><td>望遠</td><td>10MP 3 倍光學</td><td>無</td><td>無</td><td>10.8MP 5 倍</td><td>無獨立望遠</td></tr>
+    <tr><td>重量</td><td>215g</td><td>201g</td><td>180g</td><td>未取得（較前代輕約 10%）</td><td>未取得</td></tr>
+    <tr><td>展開厚度</td><td>4.1mm</td><td>4.5mm</td><td>6.1mm</td><td>約 5.0mm（單邊）</td><td>未取得</td></tr>
+    <tr><td>防水防塵</td><td>IP48</td><td>IP48</td><td>IP48</td><td>IP68</td><td>IP68</td></tr>
+    <tr><td>特色</td><td>最薄的 Z Fold、最強相機組</td><td>最輕的 Z Fold、4:3 內螢幕</td><td>最輕薄的 Z Flip、AI 外螢幕功能</td><td>25W 無線充電、新鉸鍊</td><td>Touch ID、Apple Pencil、分割多工</td></tr>
+  </tbody>
+</table>
+</div>
+<p class="note">資料來源為媒體整理的發表規格，細項（尤其重量、厚度與電池）請以各廠官方頁面為準。「未取得」代表我在查證的資料中沒有找到明確數字。</p>
+
+<h2>各機種優缺點</h2>
+<div class="grid">
+
+  <div class="card">
+    <h3>Galaxy Z Fold8 Ultra <span class="tag">65,900 起</span></h3>
+    <p class="note">規格導向整理；新機尚缺完整長期評測</p>
+    <ul class="pro"><li>相機組最完整（200MP 主鏡、3 倍望遠）</li><li>電池 5,000mAh、45W 有線充電</li><li>展開僅 4.1mm、重 215g，屬同類輕薄</li></ul>
+    <ul class="con"><li>起價與頂規價差大，1TB 達 83,900</li><li>防塵標示 IP48，與 IP68 機種不同</li></ul>
+  </div>
+
+  <div class="card">
+    <h3>Galaxy Z Fold8（寬版） <span class="tag">59,900 起</span></h3>
+    <p class="note">規格導向整理；新機尚缺完整長期評測</p>
+    <ul class="pro"><li>寬版 4:3 內螢幕，閱讀與多工較自然</li><li>201g，Z Fold 系列最輕</li><li>價格比 Ultra 低約 6,000 元</li></ul>
+    <ul class="con"><li>沒有望遠鏡頭</li><li>外螢幕較小（5.5 吋）</li></ul>
+  </div>
+
+  <div class="card">
+    <h3>Galaxy Z Flip8 <span class="tag">38,900 起</span></h3>
+    <p class="note">規格導向整理；新機尚缺完整長期評測</p>
+    <ul class="pro"><li>牌價最低、180g 最輕</li><li>折起來可放口袋，外螢幕支援 AI 功能</li></ul>
+    <ul class="con"><li>電池 4,300mAh 為本組最小</li><li>沒有望遠；前代 Flip7 評測曾指出續航不佳與不防塵，新機的防塵標示與前代類似</li></ul>
+  </div>
+
+  <div class="card">
+    <h3>Pixel 11 Pro Fold <span class="tag">60,990 起</span></h3>
+    <p class="note">規格導向整理；新機尚缺完整長期評測</p>
+    <ul class="pro"><li>IP68，防水防塵</li><li>16GB RAM、Tensor G6、25W 無線充電</li><li>Google 稱新鉸鍊耐用度提升（出廠前測試結果，實際可能不同）</li></ul>
+    <ul class="con"><li>價格較前代調漲（美國 +$100）</li><li>超廣角與望遠鏡頭與前代相同；前代評測指出相機表現不及 Samsung Fold</li></ul>
+  </div>
+
+  <div class="card">
+    <h3>iPhone Duo <span class="tag">74,900 起</span></h3>
+    <p class="note">規格導向整理；新機尚缺完整長期評測</p>
+    <ul class="pro"><li>IP68、A20 Pro、Touch ID 回歸</li><li>支援分割畫面多工與 Apple Pencil</li><li>雙電池設計，官方標示混合使用最長 24 小時</li></ul>
+    <ul class="con"><li>台灣牌價最高，頂規 2TB 達 118,900</li><li>新版 Siri AI 初期僅支援英文</li><li>首代產品，且發表前就有供貨偏緊的報導</li></ul>
+  </div>
+
+  <div class="card">
+    <h3>上一代 Galaxy Z Fold7 <span class="tag">二手／福利品行情</span></h3>
+    <p class="note">依 TechRadar 評測整理</p>
+    <ul class="pro"><li>相機表現強、輕薄、AI 功能實用</li><li>福利品價格明顯低於新機</li></ul>
+    <ul class="con"><li>不支援 S Pen</li><li>福利品要留意保固與電池狀況</li></ul>
+  </div>
+
+</div>
+
+<h2>折疊手機的共通缺點</h2>
+<div class="card warn">
+  <p>依 BGR 整理的使用者常見抱怨，這些問題多半無法靠規格表避開：</p>
+  <ul class="con">
+    <li><b>鉸鍊磨損：</b>零件小而精密，使用數月到數年可能變鬆，灰塵與砂粒也會影響鉸鍊。</li>
+    <li><b>續航：</b>機身薄，電池容量有限，大螢幕又更耗電。</li>
+    <li><b>螢幕比例：</b>特殊比例會讓部分 App、照片與影片顯示不佳，減損大螢幕的價值。</li>
+    <li><b>摺痕：</b>即使展開，鉸鍊處仍可能有輕微凸起或光影差異。</li>
+    <li><b>保護貼：</b>折疊螢幕較脆弱，保護貼也更容易起泡、變色或藏污。</li>
+  </ul>
+</div>
+
+<h2>怎麼選（我的分析建議）</h2>
+<div class="card">
+  <p class="note">以下為依上方規格與價格所做的推論，不是實測結論，也不是購買保證。</p>
+  <ul>
+    <li><b>想要最完整的相機與生產力：</b>Galaxy Z Fold8 Ultra。</li>
+    <li><b>預算約 6 萬、要書本式：</b>Fold8（寬版）或 Pixel 11 Pro Fold；在意防水防塵時，Pixel 的 IP68 是明確差異。</li>
+    <li><b>iPhone 用戶、預算充足、不排斥首代：</b>iPhone Duo。若在意 Siri AI 的中文支援，建議等後續更新。</li>
+    <li><b>預算 4 萬內、想嘗鮮：</b>Galaxy Z Flip8，或考慮上一代 Fold7 福利品（先確認保固）。</li>
+    <li><b>不確定自己會不會用：</b>先到門市實際開闔、比較摺痕與重量再決定。</li>
+  </ul>
+</div>
+
+<h2>資料說明</h2>
+<div class="card">
+  <ul>
+    <li>價格以新台幣計，為牌價或媒體報導之建議售價，實際以通路與促銷為準。</li>
+    <li>Samsung 與 Apple 價格取自台灣媒體報導；Pixel 11 Pro Fold 台灣價格取自媒體標題。</li>
+    <li>Honor Magic V6 等機種在台灣不是主流官方通路產品，未納入比較；其中國定價約人民幣 8,999 元起。</li>
+    <li>新機型多數還沒有長期使用與耐用度評測，「優缺點」欄位以規格與既有報導整理，建議等更多獨立評測再下決定。</li>
+  </ul>
+  <details>
+    <summary>資料來源</summary>
+    <ul class="src">
+      <li><a href="https://www.sogi.com.tw/articles/samsung-galaxy-z-fold8/6269318">SOGI：三星 Z Fold8 系列與 Z Flip8 台灣上市與價格</a></li>
+      <li><a href="https://www.sogi.com.tw/articles/samsung-galaxy-fold8/6269272">SOGI：Z Fold8 Ultra、Fold8 與 Flip8 規格比較</a></li>
+      <li><a href="https://m.eprice.com.tw/mobile/talk/4544/5826863/1">ePrice：iPhone Duo 台灣第一波 10/23 發售</a></li>
+      <li><a href="https://www.foxbusiness.com/technology/apple-unveils-first-foldable-iphone-iphone-18-pro-lineup-new-watches-annual-launch-event">Fox Business：Apple 發表首款折疊 iPhone</a></li>
+      <li><a href="https://www.engadget.com/2235151/this-is-the-1900-google-pixel-11-pro-fold/">Engadget：Pixel 11 Pro Fold</a></li>
+      <li><a href="https://www.inside.com.tw/tag/2371-Pixel">INSIDE：Pixel 11 Pro Fold 台灣售價 60,990 元起（標題）</a></li>
+      <li><a href="https://www.techradar.com/best/best-foldable-phones">TechRadar：Best foldable phones 2026</a></li>
+      <li><a href="https://bgr.com/2196864/what-do-owners-say-problem-foldable-phones/">BGR：What owners say is the biggest problem with foldables</a></li>
+      <li><a href="https://feebee.com.tw/s/%E4%B8%89%E6%98%9Fgalaxy%20z%20fold%207/">飛比價格：Galaxy Z Fold7 行情</a></li>
+      <li><a href="https://www.notebookcheck.net/Honor-finally-reveals-pricing-for-new-Magic-V6-foldable.1248051.0.html">Notebookcheck：Honor Magic V6 定價</a></li>
+    </ul>
+  </details>
+</div>
+
+<footer>本頁為資訊整理與個人分析，不構成購買或投資建議。</footer>
+
+</div>
+</body>
+</html>
